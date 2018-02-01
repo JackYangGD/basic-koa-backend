@@ -1,0 +1,26 @@
+{
+  "name": "basic-koa-backend",
+  "version": "0.0.1",
+  "scripts": {
+    "server-product": "SCENE=product pm2 start basic-koa-backend",
+    "server-test": "SCENE=test pm2 start basic-koa-backend",
+    "server-development": "SCENE=development pm2 start basic-koa-backend"
+  },
+  "dependencies": {
+    "babel-core": "6.13.2",
+    "babel-polyfill": "6.13.0",
+    "babel-preset-es2015-node6": "0.3.0",
+    "babel-preset-stage-3": "6.5.0",
+    "koa": "2.2.0",
+    "koa-router": "7.1.1",
+    "koa-convert": "*",
+    "koa-bodyparser": "*",
+    "log4js": "1.1.1",
+    "koa-cors": "*",
+    "mongoist": "*",
+    "request": "*",
+    "nodemailer": "*",
+    "ioredis": "*",
+    "mysql": "*"
+  }
+}

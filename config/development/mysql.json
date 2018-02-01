@@ -1,0 +1,8 @@
+{
+  "database": "xeenho",
+  "user": "xeenho",
+  "password": "#xeenho#dmin#",
+  "post": "3306",
+  "host": "120.77.12.124",
+  "connectionLimit": 10
+}
