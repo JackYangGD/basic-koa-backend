@@ -78,3 +78,14 @@ exports.getMonthEndDate = ()=> {
     let monthEndDate = new Date(nowYear, nowMonth, getMonthDays(nowMonth));
     return formatDate(monthEndDate) + ' 59:59:59';
 };
+
+/**
+ * 字符串转换为时间戳
+ * @param date 字符串 "2014-05-08 00:22:11"
+ * @return 时间戳
+ * **/
+exports.dateToTimestamp = function (date) {
+    date = new Date(Date.parse(date.replace(/-/g, "/")));
+    date = date.getTime();
+    return date;
+};
